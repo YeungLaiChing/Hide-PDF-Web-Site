@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+<meta name = "viewport" content = "width = 320" />
+<link rel="shortcut icon" type="image/png" href="favicon.ico" />
+<link rel="apple-touch-startup-image"  href="favicon.png" />
+<link rel="apple-touch-icon-precomposed"  href="favicon.png" />
+<meta name="msapplication-TitLeImage" content="favicon.png" />
+<link rel="apple-touch-icon"  href="favicon.png" />
+<title>PDF Hider</title>
+<!-- Google web fonts -->
+<!-- The main CSS file -->
+<link href="assets/css/style.css" rel="stylesheet" />
+<script language="javascript">
+function openfile(){
+   document.getElementById("upl").click();
+}
+function upload(){
+   document.getElementById("upload").submit();
+}
+</script>
+</head>
+<body>
+	<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+		<div id="drop">
+			<a class="button" id="pickfiles" href="#" onclick="openfile();return;">Browse</br/> 選擇</a>
+			<input id="upl" type="file" name="fileToUpload" onchange="upload()"/>
+		</div>
+<div>CCL3/EGS/PLJ/PCC</div>
+	</form>
+</body>
+</html>
